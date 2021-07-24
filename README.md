@@ -1,6 +1,6 @@
-# Project 3 - *Name of App Here*
+# Project 3 - Twitter Viewer
 
-**Name of your app** is a basic twitter app to read your tweets.
+Twitter Viewer is a basic twitter app to read your tweets.
 
 Time spent: **X** hours spent in total
 
@@ -19,9 +19,4 @@ The following **bonus** features are implemented:
 - [ ] User can pull to refresh. (1pt)
 - [ ] User can load past tweets infinitely. (2pts)
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
