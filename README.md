@@ -17,6 +17,7 @@ The following **bonus** features are implemented:
 - [X] When composing a tweet, user sees a countdown for the number of characters remaining for the tweet (out of 280) (2pts)
 - [ ] User can view their profile in a profile tab. (3pts)
 - [ ] User sees embedded images in tweet if available. (3pts)
+- [X] Make profile images on homepage rounded. (3pts)
 
 ## Video Walkthrough
 
