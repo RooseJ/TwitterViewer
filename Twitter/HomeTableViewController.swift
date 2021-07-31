@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeTableTableViewController: UITableViewController {
+class HomeTableViewController: UITableViewController {
     
     var tweetArray = [NSDictionary]()
     var numberOfTweet: Int!
@@ -33,6 +33,10 @@ class HomeTableTableViewController: UITableViewController {
         })
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+    }
     @objc func loadMoreTweets(){
         
         numberOfTweet = numberOfTweet + 15
@@ -74,6 +78,11 @@ class HomeTableTableViewController: UITableViewController {
         }
         cell.profilePicture.layer.masksToBounds = true
         cell.profilePicture.layer.cornerRadius = cell.profilePicture.bounds.width / 2
+        
+        cell.setFavorited(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.setRetweeted(tweetArray[indexPath.row]["retweeted"] as! Bool)
+        
+        cell.tweetID = tweetArray[indexPath.row]["id"] as! Int
         return cell
     }
     
